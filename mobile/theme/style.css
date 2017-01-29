@@ -1,0 +1,1410 @@
+body, p, ul, ol, li, h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    font-weight: normal;
+}
+body {
+ background-color:#abba00;
+ background-image:url(images/bodyBg.jpg);
+ background-position:0 0;
+ background-repeat:repeat-x;
+ background-attachment:scroll;
+ background-size:auto;
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+ color:#747474;
+    -webkit-text-size-adjust: none;
+    width: 100%;
+    height: 100%;
+}
+h1 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:32px;
+color:#000000;
+    border-bottom: 1px solid #758f0b;
+    padding-bottom: 3px;
+}
+h2 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:28px;
+color:#000000;
+    border-bottom: 1px solid #758f0b;
+    padding-bottom: 3px;
+}
+h3 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:26px;
+color:#000000;
+}
+h4 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:24px;
+color:#000000;
+}
+h5 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:20px;
+color:#000000;
+}
+h6 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:18px;
+color:#000000;
+}
+a {
+ text-decoration:none;
+color:#839001;
+}
+a:hover {
+text-decoration:none;
+color:#839001;
+}
+a img{
+    border:0 solid;
+}
+p {
+    line-height: 1.9;
+}
+ul, ol {
+    padding: 0 0 0 20px;
+    list-style: disc;
+}
+ol {
+    list-style: decimal;
+    padding: 0 0 0 23px;
+}
+li {
+    padding: 0 0 10px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+th {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+ background:#edf2b8;
+ border-width:1px;
+ border-style:solid;
+ border-color:#cfd492;
+ color:#7f941e;
+ padding:5px;
+}
+td {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+ background:transparent;
+ border-width:1px;
+ border-style:solid;
+ border-color:#cfd492;
+ color:#747474;
+ padding:6px;
+}
+hr {
+    border-top: 1px solid #758f0b
+}
+/*---------------------------------- HEADER AREA -----------------------------------------*/
+.headerContainer {
+    padding: 20px 0 25px;
+    text-align: center;
+}
+.logoarea {
+    padding-bottom: 15px;
+}
+.headerContainer h1 {
+ color:#000000;
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size:28px;
+    border: 0px;
+    padding-bottom: 5px;
+}
+.headerContainer h5 {
+ color:#647000;
+ font-size:14px;
+ font-family:Arial, Helvetica, sans-serif;
+    border: 0px;
+}
+/*---------------------------------- MENU AREA -----------------------------------------*/
+.menuarea {
+    width: 100%;
+    margin: 0 auto;
+    padding-bottom: 10px;
+}
+#navigation ul {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    height: 52px;
+    width: 95%;
+ background-color:transparent;
+ background-image:url(images/menuBg.png);
+background-repeat:repeat-x;
+background-position:left top;
+}
+#navigation li {
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 0;
+    height: 52px;
+    cursor: pointer;
+    width: 33%;
+    background: url(images/menuBorder.png) right top no-repeat;
+}
+#navigation li a {
+ font-family:Arial, Helvetica, sans-serif;
+ color:#ffffff;
+ font-size:13px;
+    text-decoration: none;
+    float: left;
+    display: block;
+    width: 100%;
+    height: 52px;
+    font-weight: 500;
+}
+#navigation li.selected {
+ background-color:#707c01;
+ background-image:url(images/menuBorderHover.png);
+background-repeat:no-repeat;
+background-position:right top;
+}
+#navigation li:last-child{
+    background:none;
+}
+#navigation li.selected a span {
+color:#e8ecb9;
+}
+#navigation li a span {
+    word-wrap: break-word;
+    height: 52px;
+    display: block;
+    line-height: 52px;
+    overflow: hidden;
+    text-align:center;
+    margin:0 3px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+#navigation li a em {
+    display: block;
+    float: right;
+    height: 7px;
+    width: 11px;
+    margin: -27px 10px 0;
+}
+#navigation li.navArrow a em {
+    background: url(images/navArrow1.png) no-repeat 0 0;
+}
+/*---------------------------------- SUBMENU AREA -----------------------------------------*/
+.submenu {
+    min-height: 10px;
+    height: auto !important;
+    height: 10px;
+    overflow: hidden;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin: 0 auto;
+}
+.submenu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ background-color:#f4f7dc;
+background-image:none;
+background-position:top left;
+ background-repeat:repeat;
+border-width:1px;
+border-style:solid;
+border-color:#7a8503;
+border-radius:0px;
+-moz-border-radius:0px;
+-webkit-border-radius:0px;
+-o-border-radius:0px;
+    -moz-box-shadow: 1px 1px 3px #8c8c8c;
+    -webkit-box-shadow: 1px 1px 3px #8c8c8c;
+    -o-box-shadow: 1px 1px 3px #8c8c8c;
+    box-shadow: 1px 1px 3px #8c8c8c;
+}
+.submenu li {
+    display: block;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+}
+.submenu li a {
+ color:#747474;
+ font-size:13px;
+ font-family:Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    line-height: 3;
+    float: left;
+    cursor: pointer;
+}
+.submenu li.selected {
+background-color:#f36c00;
+background-image:none;
+background-position:top left;
+background-repeat:repeat;
+}
+.submenu li.selected a span {
+ color:#FFFFFF;
+}
+.submenu li a span {
+    float: left;
+    padding-left: 15px;
+    word-wrap: break-word;
+    width: 85%
+}
+.submenu li a em {
+    width: 5px;
+    float: right;
+    height: 9px;
+}
+.submenu li.navArrow a em, .submenu li.selected.navArrow a em {
+    background: url(images/subNavArrow.png) left top no-repeat;
+    float: right;
+    height: 10px;
+    width: 10px;
+    margin: 15px 5px 0 13px;
+}
+.submenu li.selected.navArrow a em {
+    background: url(images/subNavArrow1.png) left top no-repeat;
+}
+/*---------------------------------- CONTENT AREA -----------------------------------------*/
+.container {
+    background-color:#F4F6DC;
+ background-image:none;
+ background-position:0 0;
+ background-repeat:no-repeat;
+ background-attachment:scroll;
+ background-size:auto;
+ box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0px 0px transparent inset;
+ -moz-box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0px 0px transparent inset;
+ -webkit-box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0px 0px transparent inset;
+ -o-box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0px 0px transparent inset;
+ border-width: 10px;
+ border-style:solid;
+ border-color:#E8ECB9;
+ border-radius: 0;
+ -moz-border-radius:0;
+ -webkit-border-radius:0;
+ -o-border-radius:0;
+    margin: 0 8px;
+    padding: 20px;
+}
+/*---------------------------------- BANNER AREA CSS -----------------------------------------*/
+.bannerImage {
+    margin-bottom: 10px;
+}
+/*---------------------------------- BREADCRUMB AREA CSS -----------------------------------------*/
+.breadcrumb {
+    padding: 5px 0;
+    border-bottom: 1px dotted #CFD492;
+    margin-bottom: 15px;
+}
+.breadcrumb a {
+    text-decoration: none;
+}
+.breadcrumb span {
+    padding: 0 10px;
+}
+.breadcrumb p {
+    word-wrap: break-word
+}
+.contentArea {
+    min-height: 250px;
+    height: auto !important;
+    height: 250px;
+}
+/*---------------------------------- SIDEBAR AREA -----------------------------------------*/
+.sidebararea {
+    background-color:#EAEDCD;
+ background-image:none;
+ background-position:0 0;
+ background-repeat:no-repeat;
+ background-attachment:scroll;
+ background-size:auto;
+ box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0 0 transparent inset;
+ -webkit-box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0 0 transparent inset;
+ -moz-box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0 0 transparent inset;
+ -o-box-shadow: 0px 0px 0px 0px transparent, 0px 0px 0 0 transparent inset;
+ border-width: 0;
+ border-style:none;
+ border-color:transparent;
+ border-radius: 0;
+ -moz-border-radius:0;
+ -webkit-border-radius:0;
+ -o-border-radius:0;
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+ color:#747474;
+    margin: 20px 17px 15px;
+    background: #EAEDCD;
+    min-height: 100px;
+    padding: 20px;
+    height: auto !important;
+    height: 100px;
+}
+.sidebararea h1 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:32px;
+ color:#000000;
+}
+.sidebararea h2 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:28px;
+ color:#000000;
+}
+.sidebararea h3 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:26px;
+ color:#000000;
+}
+.sidebararea h4 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:24px;
+ color:#000000;
+}
+.sidebararea h5 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:22px;
+ color:#000000;
+}
+.sidebararea h6 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:20px;
+ color:#000000;
+}
+.sidebararea a {
+ text-decoration:none;
+ color:#839001;
+}
+.sidebararea a:hover {
+ text-decoration:none;
+ color:#839001;
+}
+.sidebararea th {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+ background:#edf2b8;
+ border-width:1px;
+ border-style:solid;
+ border-color:#cfd492;
+ color:#7f941e;
+ padding:5px;
+}
+.sidebararea td {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+ background:transparent;
+ border-width:1px;
+ border-style:solid;
+ border-color:#cfd492;
+ color:#747474;
+ padding:6px;
+}
+.sidebararea .zs-highlight-box {
+ background-color: #abba00;
+ background-image: none;
+ background-image: none, -moz-linear-gradient(bottom, transparent, transparent);
+ background-image: none, -webkit-linear-gradient(bottom, transparent, transparent);
+ background-image: none, -o-linear-gradient(bottom, transparent, transparent);
+ background-position: top left;
+ background-repeat: no-repeat;
+ box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 0 transparent inset;
+ -moz-box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 0 transparent inset;
+ -webkit-box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 0 transparent inset;
+ -o-box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 10px transparent inset;
+ border-width: 0 0 2px;
+ border-style:solid;
+ border-color:#707c01;
+ border-radius: 0;
+ -moz-border-radius:0;
+ -webkit-border-radius:0;
+ -o-border-radius:0;
+ padding: 10px;
+ margin: 0;
+    min-height: 200px;
+font-family: Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+ color:#747474;
+}
+.sidebararea .zs-highlight-box h1 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:32px;
+ color:#000000;
+}
+.sidebararea .zs-highlight-box h2 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:28px;
+ color:#000000;
+}
+.sidebararea .zs-highlight-box h3 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:26px;
+ color:#000000;
+}
+.sidebararea .zs-highlight-box h4 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:24px;
+ color:#000000;
+}
+.sidebararea .zs-highlight-box h5 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:22px;
+ color:#000000;
+}
+.sidebararea .zs-highlight-box h6 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:20px;
+ color:#000000;
+}
+.sidebararea .zs-highlight-box a {
+ text-decoration:none;
+ color:#f4f6dc;
+}
+.sidebararea .zs-highlight-box a:hover {
+ text-decoration:none;
+ color:#f4f6dc;
+}
+.sidebararea .zs-highlight-box th {
+    background:#BCCA1B;
+    border-color:#C6D420;
+    color:#6A7E10;
+}
+.sidebararea .zs-highlight-box td {
+    border-color:#C6D420;
+    color:#6E7512;
+}
+.sidebararea .zs-highlight-box  form li span input[type=text], .sidebararea .zs-highlight-box  form li span textarea, .sidebararea .zs-highlight-box  form li span select {
+    background:#f4f6dc;
+    width:175px;
+    border-color:#9EA362;
+}
+/*----------------------------------- THEME SIDEBAR AREA HIGHLIGHT BOX NEWSLETTER CSS -----------------------------------------------*/
+
+.sidebararea .zs-highlight-box .newsletter-input-field {
+    background: #f4f6dc;
+    border-color: #9EA362;
+    color:#6E7512;
+}
+.sidebararea .zs-highlight-box .newsletter-form input[type="text"]::-moz-placeholder {
+    color:#757e03;
+}
+.sidebararea .zs-highlight-box .newsletter-form  input[type="text"]::-webkit-input-placeholder{
+    color:#757e03;
+}
+.sidebararea .zs-highlight-box .newsletter-form  input[type="text"]:-ms-input-placeholder {
+    color:#757e03;
+}
+.sidebararea .zs-highlight-box th {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+ background:#BCCA1B;
+ border-width:1px;
+ border-style:solid;
+ border-color:#C6D420;
+ color:#6A7E10;
+ padding:5px;
+}
+.sidebararea .zs-highlight-box td {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+ background:transparent;
+ border-width:1px;
+ border-style:solid;
+ border-color:#C6D420;
+ color:#6E7512;
+ padding:6px;
+}
+/*-----------------------------------  TEXT HIGHLIGHT CSS  -----------------------------------------------*/
+.sidebararea .zs-text-light-color {
+color:#B7B7B7;
+}
+.sidebararea .zs-text-highlight-color {
+color:#000000;
+}
+.sidebararea .zs-highlight-box .zs-text-light-color {
+color:#B7B7B7;
+}
+.sidebararea .zs-highlight-box .zs-text-highlight-color {
+color:#000000;
+}
+/*--------------------- THEME SIDEBAR TABS ACCORDION AREA CSS ---------------------*/
+.sidebararea .zs-tabs ul {
+    list-style: none;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #e2e4cd;
+    padding: 0;
+    margin: 0;
+    display:none;
+}
+.sidebararea .zs-tabs li {
+    padding: 0;
+    margin: 0 3px;
+    float: left;
+}
+.sidebararea .zs-tabs ul li div {
+    float: left;
+    position: relative;
+    margin: 0 0 -1px;
+    display: block;
+    cursor: pointer;
+    background: #eaedcd;
+    padding: 0 25px;
+    overflow: hidden;
+    
+    color:#666d21;
+    line-height:3;
+    border: 1px solid #e2e4cd;
+    border-bottom: 0px;
+}
+.sidebararea .zs-tabs ul li.selected div {
+    background: #ffffff;
+    padding-bottom: 1px;    
+}
+.sidebararea .zs-tabs-accordion-content, .sidebararea .zs-highlight-box .zs-tabs-accordion-content{
+    background: #ffffff;
+    border: 1px solid #e2e4cd;
+    border-top: 0px;
+    padding: 15px;
+    clear: both;
+    color: #8d8d8d;
+    margin-bottom: 5px;
+    min-height: 70px;
+    height: auto !important;
+    height: 70px;
+}
+.sidebararea .zs-accordion, .sidebararea .zs-highlight-box .zs-accordion {
+    color: #666d21;
+    padding: 10px;
+    cursor: pointer;
+    display:block;
+    background: #F6F8DF;
+    position: relative;
+    border: 1px solid #e2e4cd;
+    margin-bottom: 5px;
+}
+.sidebararea .zs-accordion.selected, .sidebararea .zs-highlight-box .zs-accordion.selected {
+    margin-bottom: 0px;
+    background: #ffffff;
+}
+/*--------------------- THEME SIDEBAR HIGHLIGHT BOX TABS ACCORDION AREA CSS ---------------------*/
+.sidebararea .zs-highlight-box .zs-accordion {
+    background: #c4d70d none repeat scroll 0 0;
+    border: 1px solid #cee119;
+}
+.sidebararea .zs-highlight-box .zs-tabs-accordion-content h1 {
+    color:#000000;
+}
+.sidebararea .zs-highlight-box .zs-tabs-accordion-content h2 {
+    color:#000000;
+}
+.sidebararea .zs-highlight-box .zs-tabs-accordion-content h3 {
+    color:#000000;
+}
+.sidebararea .zs-highlight-box .zs-tabs-accordion-content h4 {
+    color:#000000;
+}
+.sidebararea .zs-highlight-box .zs-tabs-accordion-content h5 {
+    color:#000000;
+}
+.sidebararea .zs-highlight-box .zs-tabs-accordion-content h6 {
+    color:#000000;
+}
+.sidebararea .zs-highlight-box .zs-tabs-accordion-content a {
+    color:#839001;
+}
+.sidebararea .zs-highlight-box .zs-tabs-accordion-content a:hover {
+    color:#839001;
+}
+.sidebararea .zs-highlight-box .zs-tabs-accordion-content hr {
+    border-top-color:#758f0b;+
+}
+.sidebararea .zs-highlight-box .zs-tabs-accordion-content th {
+    background: #edf2b8;
+    border-color: #cfd492;
+    color:#7f941e;
+}
+.sidebararea .zs-highlight-box .zs-tabs-accordion-content td {
+    background: transparent;
+    border-color: #cfd492;
+    color:#757575;
+}
+.sidebararea .zs-highlight-box .zs-tabs-accordion-content form li span input[type="text"], .sidebararea .zs-highlight-box .zs-tabs-accordion-content form li span textarea, .sidebararea .zs-highlight-box .zs-tabs-accordion-content form li span select {
+    background: #ffffff;
+    border-color: #d7dba7;
+}
+/*---------------------------------- FOOTER AREA -----------------------------------------*/
+.footerArea {
+    background-color:#abba00;
+ background-image:none;
+ background-position:0 0;
+ background-repeat:no-repeat;
+ background-attachment:scroll;
+ background-size:auto;
+ box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 0 transparent inset;
+ -moz-box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 0 transparent inset;
+ -o-box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 0 transparent inset;
+ -webkit-box-shadow: 0px 0px 0 0px transparent, 0px 0px 0px 0 transparent inset;
+ border-width:0;
+ border-style:none;
+ border-color:transparent;
+ border-radius: 0;
+ -moz-border-radius:0;
+ -webkit-border-radius:0;
+ -o-border-radius:0;
+ color:#ffffff;
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+    padding: 25px;
+    min-height: 50px;
+    height: auto !important;
+    height: 50px;
+}
+.footerArea h1 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:28px;
+ color:#000000;
+    border-bottom: 1px solid #91A000;
+}
+.footerArea h2 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:24px;
+ color:#000000;
+    border-bottom: 1px solid #91A000;
+}
+.footerArea h3 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:20px;
+ color:#000000;
+}
+.footerArea h4 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:18px;
+ color:#000000;
+}
+.footerArea h5 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:16px;
+ color:#000000;
+}
+.footerArea h6 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:14px;
+ color:#000000;
+}
+.footerArea a {
+ text-decoration:none;
+ color:#FFFE00;
+}
+.footerArea a:hover {
+ text-decoration:none;
+ color:#FFFE00;
+}
+.footerArea th {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+ background:#edf2b8;
+ border-width:1px;
+ border-style:solid;
+ border-color:#cfd492;
+ color:#7f941e;
+ padding:5px;
+}
+.footerArea td {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+ background:transparent;
+ border-width:1px;
+ border-style:solid;
+ border-color:#cfd492;
+ color:#ffffff;
+ padding:6px;
+}
+.footerArea .zs-highlight-box {
+ background-color: #727e04;
+ background-image: none;
+ background-image: none, -moz-linear-gradient(bottom, transparent, transparent);
+ background-image: none, -webkit-linear-gradient(bottom, transparent, transparent);
+ background-image: none, -o-linear-gradient(bottom, transparent, transparent);
+ background-position: top left;
+ background-repeat: no-repeat;
+ box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2), 0px 0px 0px 0 transparent inset;
+ -moz-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2), 0px 0px 0px 0 transparent inset;
+ -webkit-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2), 0px 0px 0px 0 transparent inset;
+ -o-box-shadow: 3px 3px 5px 0px rgba(0,0,0,0.2), 0px 0px 0px 0 transparent inset;
+ border-width: 0px;
+ border-style:none;
+ border-color:transparent;
+ border-radius: 0;
+ -moz-border-radius:0;
+ -webkit-border-radius:0;
+ -o-border-radius:0;
+ padding: 10px;
+ margin: 10px;
+    min-height: 200px;
+color:#AAB823;
+ font-family: Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+}
+.footerArea .zs-highlight-box h1 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:28px;
+ color:#edf2b8;
+    border-bottom: 1px solid #91A000;
+}
+.footerArea .zs-highlight-box h2 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:24px;
+ color:#edf2b8;
+    border-bottom: 1px solid #91A000;
+}
+.footerArea .zs-highlight-box h3 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:20px;
+ color:#edf2b8;
+}
+.footerArea .zs-highlight-box h4 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:18px;
+ color:#edf2b8;
+}
+.footerArea .zs-highlight-box h5 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:16px;
+ color:#edf2b8;
+}
+.footerArea .zs-highlight-box h6 {
+ font-family:Arial, Helvetica, sans-serif;
+ font-size:14px;
+ color:#edf2b8;
+}
+.footerArea .zs-highlight-box a {
+ text-decoration:none;
+ color:#FFFE00;
+}
+.footerArea .zs-highlight-box a:hover {
+ text-decoration:none;
+ color:#FFFE00;
+}
+.footerArea .zs-highlight-box th {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+ background:#818F01;
+ border-width:1px;
+ border-style:solid;
+ border-color:#96A510;
+ color:#C0DD39;
+ padding:5px;
+}
+.footerArea .zs-highlight-box td {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+ background:transparent;
+ border-width:1px;
+ border-style:solid;
+ border-color:#96A510;
+ color:#AAB823;
+ padding:6px;
+}
+/*----------------------------------- THEME FOOTER AREA HIGHLIGHT BOX NEWSLETTER CSS -----------------------------------------------*/
+
+.footerArea .zs-highlight-box .newsletter-desc {
+    color:#AAB823;
+}
+.footerArea .zs-highlight-box .newsletter-input-field {
+    background: #818F01;
+    border-color: #8D9C05;
+    color:#AAB823;
+}
+.footerArea .zs-highlight-box .newsletter-form input[type="text"]::-moz-placeholder {
+    color:#adbc1e;
+}
+.footerArea .zs-highlight-box .newsletter-form  input[type="text"]::-webkit-input-placeholder{
+    color:#adbc1e;
+}
+.footerArea .zs-highlight-box .newsletter-form  input[type="text"]:-ms-input-placeholder {
+    color:#adbc1e;
+}
+/*-----------------------------------  TEXT HIGHLIGHT CSS  -----------------------------------------------*/
+.footerArea .zs-text-light-color {
+color:#C6D912;
+}
+.footerArea .zs-text-highlight-color {
+color:#000000;
+}
+.footerArea .zs-highlight-box .zs-text-light-color {
+color:#C6D912;
+}
+.footerArea .zs-highlight-box .zs-text-highlight-color {
+color:#000000;
+}
+/*--------------------- THEME FOOTER TABS ACCORDION AREA CSS ---------------------*/
+.footerArea .zs-tabs ul {
+    list-style: none;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #bacb1b;
+    padding: 0;
+    margin: 0;
+    display:none;
+}
+.footerArea .zs-tabs li {
+    padding: 0;
+    margin: 0 3px;
+    float: left;
+}
+.footerArea .zs-tabs ul li div {
+    float: left;
+    position: relative;
+    margin: 0 0 -1px;
+    display: block;
+    cursor: pointer;
+    background: #A8B716;
+    padding: 0 25px;
+    overflow: hidden;
+    
+    color:#FBFF6C;
+    line-height:3;
+    border: 1px solid #bacb1b;
+    border-bottom: 0px;
+}
+.footerArea .zs-tabs ul li:first-child {
+    margin-left: 0px;
+}
+.footerArea .zs-tabs ul li.selected div {
+    background: #b3c418;
+    padding-bottom: 1px;
+    color:#ffffff;
+}
+.footerArea .zs-tabs-accordion-content, .footerArea .zs-highlight-box .zs-tabs-accordion-content {
+    background: #b3c418;
+    border: 1px solid #bacb1b;
+    border-top: 0px;
+    padding: 15px;
+    clear: both;
+    color: #ffffff;
+    margin-bottom: 5px;
+    min-height: 70px;
+    height: auto !important;
+    height:70px;
+}
+.footerArea .zs-accordion, .footerArea .zs-highlight-box .zs-accordion {
+    color:#FBFF6C;
+    padding: 10px;
+    cursor: pointer;
+    display:block;
+    background: #A8B716;
+    position: relative;
+    border: 1px solid #bacb1b;
+    margin-bottom: 5px;
+}
+.footerArea .zs-accordion.selected, .footerArea .zs-highlight-box .zs-accordion.selected {
+    margin-bottom: 0px;
+    background: #b3c418;
+    color:#ffffff;
+}
+/*--------------------- THEME FOOTER HIGHLIGHT BOX TABS ACCORDION AREA CSS ---------------------*/
+.footerArea .zs-highlight-box .zs-tabs-accordion-content {
+    color:#ffffff;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content h1 {
+    color:#000000;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content h2 {
+    color:#000000;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content h3 {
+    color:#000000;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content h4 {
+    color:#000000;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content h5 {
+    color:#000000;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content h6 {
+    color:#000000;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content a {
+    color:#fffe00;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content a:hover {
+    color:#fffe00;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content hr {
+    border-top-color:#758f0b;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content th {
+    background: #edf2b8;
+    border-color: #cfd492;
+    color:#7f941e;
+}
+.footerArea .zs-highlight-box .zs-tabs-accordion-content td {
+    background:transparent;
+    border-color: #cfd492;
+    color:#ffffff;
+}
+/*---------------------------------- FORM AREA CSS -----------------------------------------*/
+form ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    list-style-image: none;
+}
+form li {
+    overflow: hidden;
+    padding: 10px 0 0;
+    margin: 0;
+}
+form ul li label, form ul li div {
+    width: auto;
+    float: none;
+    padding: 5px 0;
+}
+form ul li label {
+    width: 200px;
+    text-align: left;
+}
+form li div span {
+    clear: both;
+    display:block;
+}
+form li span input, form li span label {
+    float: none;
+    width: auto;
+    padding:0 5px 0;
+    margin-top: 10px;
+}
+form li span input[type=text], form li span textarea, form li span select {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+ color:#747474;
+    width: 200px;
+    border: 1px solid #d7dba7;
+    float: left;
+    padding:5px;
+    resize: none;
+    background: #FFFFFF;
+    outline: none;
+    margin:0px;
+}
+form li span select {
+    width: 207px;
+}
+form li span textarea {
+    height: 80px;
+    overflow: auto;
+}
+form .dateinvoker {
+    background: url(images/datePickerIcn.png) 0 0 no-repeat;
+    width: 22px;
+    height: 20px;
+    border: none;
+    vertical-align: middle;
+    margin-top: 5px;
+    outline: none;
+}
+form li input[type=submit], form li input[type=reset], button {
+    border: 1px solid #b25000;
+    background: url(images/submitButtonBg.png) repeat-x;
+    padding: 5px 15px;
+    margin-right: 5px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 12px;
+ font-family:Arial, Helvetica, sans-serif;
+}
+form li input[type=reset] {
+    background: url(images/resetButtonBg.png) repeat-x;
+    border: 1px solid #d1d695;
+    color: #525252;
+    font-weight: normal;
+}
+/*-----------------------------------      THEME HIGHLIGHT BOX AREA CSS    -----------------------------------------------*/
+.zs-highlight-box {
+ background-color: #f4f6dc;
+ background-image: none;
+ background-image: none, -moz-linear-gradient(bottom, transparent, transparent);
+ background-image: none, -webkit-linear-gradient(bottom, transparent, transparent);
+ background-image: none, -o-linear-gradient(bottom, transparent, transparent);
+ background-position: top left;
+ background-repeat: no-repeat;
+ box-shadow: 0px 0px 0 8px #e4e9b4, 0px 0px 0px 0 transparent inset;
+ -moz-box-shadow: 0px 0px 0 8px #e4e9b4, 0px 0px 0px 0 transparent inset;
+ -webkit-box-shadow: 0px 0px 0 8px #e4e9b4, 0px 0px 0px 0 transparent inset;
+ -o-box-shadow: 0px 0px 0 8px #e4e9b4, 0px 0px 0px 0 transparent inset;
+ border-width: 1px;
+ border-style:dashed;
+ border-color:#c3cc74;
+ border-radius: 0;
+ -moz-border-radius:0;
+ -webkit-border-radius:0;
+ -o-border-radius:0;
+ padding: 10px;
+ margin: 10px;
+    min-height: 200px;
+font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+ color:#747474;
+}
+.zs-highlight-box h1 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:32px;
+color:#000000;
+}
+.zs-highlight-box h2 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:28px;
+color:#000000;
+}
+.zs-highlight-box h3 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:26px;
+color:#000000;
+}
+.zs-highlight-box h4 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:24px;
+color:#000000;
+}
+.zs-highlight-box h5 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:20px;
+color:#000000;
+}
+.zs-highlight-box h6 {
+font-family:Georgia, "Times New Roman", Times, serif;
+font-size:18px;
+color:#000000;
+}
+.zs-highlight-box a {
+ text-decoration:none;
+color:#839001;
+}
+.zs-highlight-box a:hover {
+text-decoration:none;
+color:#839001;
+}
+.zs-highlight-box th {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+ background:#edf2b8;
+ border-width:1px;
+ border-style:solid;
+ border-color:#cfd492;
+ color:#7f941e;
+ padding:5px;
+}
+.zs-highlight-box td {
+ font-family:Georgia, "Times New Roman", Times, serif;
+ font-size:12px;
+ background:transparent;
+ border-width:1px;
+ border-style:solid;
+ border-color:#cfd492;
+ color:#747474;
+ padding:6px;
+}
+/*-----------------------------------  TEXT HIGHLIGHT CSS  -----------------------------------------------*/
+.zs-text-light-color {
+color:#B7B7B7;
+}
+.zs-text-highlight-color {
+color:#000000;
+}
+.zs-highlight-box .zs-text-light-color {
+color:#B7B7B7;
+}
+.zs-highlight-box .zs-text-highlight-color {
+color:#000000;
+}
+/*------------------------ THEME TABS ACCORDION AREA CSS START ------------------------------*/
+.zs-tabs ul {
+    list-style: none;
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #e2e4cd;
+    padding: 0;
+    margin: 0;
+    display:none;
+}
+.zs-tabs li {
+    padding: 0;
+    margin: 0 3px;
+    float: left;
+}
+.zs-tabs ul li div {
+    float: left;
+    position: relative;
+    margin: 0 0 -1px;
+    display: block;
+    cursor: pointer;
+    background: #eaedcd;
+    padding: 0 25px;
+    overflow: hidden;    
+    color:#666d21;
+    line-height:3;
+    border: 1px solid #e2e4cd;
+    border-bottom: 0px;
+}
+.zs-tabs ul li.selected div {
+    background: #ffffff;
+    padding-bottom: 1px;    
+}
+.zs-tabs-accordion-content, .zs-highlight-box .zs-tabs-accordion-content {
+    background: #ffffff;
+    border: 1px solid #e2e4cd;
+    border-top: 0px;
+    padding: 15px;
+    clear: both;
+    color: #8d8d8d;
+    margin-bottom: 5px;
+    min-height: 70px;
+    height: auto !important;
+    height: 70px;
+}
+.zs-accordion, .zs-highlight-box .zs-accordion {
+    color: #666d21;
+    padding: 10px;
+    cursor: pointer;
+    display:block;
+    background: #eaedcd;
+    position: relative;
+    border: 1px solid #e2e4cd;
+    margin-bottom: 5px;
+}
+.zs-accordion.selected, .zs-highlight-box .zs-accordion.selected {
+    margin-bottom: 0px;
+    background: #ffffff;
+}
+/*------------------------ THEME TABS ACCORDION AREA CSS START ------------------------------*/
+.zs-highlight-box .zs-tabs-accordion-content h1 {
+    color:#000000;
+}
+.zs-highlight-box .zs-tabs-accordion-content h2 {
+    color:#000000;
+}
+.zs-highlight-box .zs-tabs-accordion-content h3 {
+    color:#000000;
+}
+.zs-highlight-box .zs-tabs-accordion-content h4 {
+    color:#000000;
+}
+.zs-highlight-box .zs-tabs-accordion-content h5 {
+    color:#000000;
+}
+.zs-highlight-box .zs-tabs-accordion-content h6 {
+    color:#000000;
+}
+.zs-highlight-box .zs-tabs-accordion-content a {
+    color:#839001;
+}
+.zs-highlight-box .zs-tabs-accordion-content a:hover {
+    color:#839001;
+}
+.zs-highlight-box .zs-tabs-accordion-content hr {
+    border-top-color:#758f0b;
+}
+.zs-highlight-box .zs-tabs-accordion-content th {
+    background: #edf2b8;
+    border-color: #cfd492;
+    color:#7f941e;
+}
+.zs-highlight-box .zs-tabs-accordion-content td {
+    background:transparent;
+    border-color: #cfd492;
+    color:#747474;
+}
+/***************************** START SOCIAL ICONS SPRITE *****************************/
+.themeSocialIconContainer {
+margin: 10px 0;
+text-align: center;
+}
+.zs-socialicon-email,.zs-socialicon-facebook,.zs-socialicon-flickr,.zs-socialicon-googleplus,.zs-socialicon-linkedin,.zs-socialicon-pinterest,.zs-socialicon-rss,.zs-socialicon-twitter,.zs-socialicon-youtube,.zs-socialicon-medium,.zs-socialicon-instagram {
+    background:url('images/zs-socialicon-sprite.png') no-repeat top left; width:30px; height:30px; display: inline-block;
+margin:3px 3px 0;
+}
+.zs-socialicon-email {
+    background-position:0 -0px;
+}
+.zs-socialicon-facebook {
+    background-position:0 -30px;
+}
+.zs-socialicon-flickr {
+    background-position:0 -60px;
+}
+.zs-socialicon-googleplus {
+    background-position:0 -90px;
+}
+.zs-socialicon-linkedin {
+    background-position:0 -120px;
+}
+.zs-socialicon-pinterest {
+    background-position:0 -150px;
+}
+.zs-socialicon-rss {
+    background-position:0 -180px;
+}
+.zs-socialicon-twitter {
+    background-position:0 -210px;
+}
+.zs-socialicon-youtube {
+    background-position:0 -240px;
+}
+.zs-socialicon-medium {
+    background-position:0 -270px;
+}
+.zs-socialicon-instagram {
+    background-position:0 -300px;
+}
+/*****************************   END: SOCIAL ICONS SPRITE *****************************/
+/*----------------------------------- THEME NEWSLETTER CSS -----------------------------------------------*/
+
+.newsletter-container {
+background: transparent;
+    padding: 10px
+}
+h3.newsletter-heading {
+    margin-bottom: 10px;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 26px;
+color: #000000;
+}
+.newsletter-desc {
+    margin-bottom: 20px;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 12px;
+color: #454545;
+}
+.newsletter-input-field {
+background: #ffffff;
+border-width: 1px;
+border-color: #cbcbcb;
+color:#454545;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 12px;
+    border-style: solid;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    margin-right: 5px;
+    width: 200px;
+    padding: 10px;
+    box-sizing: border-box;
+    vertical-align:top;
+}
+button.newsletter-button {
+background: #e76700;
+border-width: 1px;
+border-color: #b25000;
+color:#ffffff;
+font-family: Georgia, "Times New Roman", Times, serif;
+font-size: 12px;
+    border-style: solid;
+    cursor: pointer;
+    padding: 8px 10px;
+    font-weight: 400;
+    box-sizing: border-box;
+    margin-right: 0;
+}
+.newsletter-layout-1 .newsletter-form, .newsletter-layout-2 .newsletter-form {
+    margin: 0 auto;
+    text-align: center;
+}
+.newsletter-layout-3 .newsletter-form {
+    width: 200px;
+    margin: 0 auto;
+    text-align: right;
+}
+.newsletter-layout-3 button {
+    text-align: right;
+}
+.newsletter-layout-2 button.newsletter-button {
+    display:block;
+    margin:0 auto;
+}
+.newsletter-form input[type="text"]::-moz-placeholder {
+    color:#747474;
+  font-size:90%;
+  line-height:normal;
+}
+.newsletter-form  input[type="text"]::-webkit-input-placeholder{
+    color:#747474;
+  font-size:85%;
+  line-height:normal;
+}
+.newsletter-form  input[type="text"]:-ms-input-placeholder {
+    color:#747474;
+  font-size:90%;
+  line-height:normal;
+}
+/*--------------------- THEME MEMBERSHIP PORTAL AREA CSS ---------------------*/
+.mp-container {
+    height: 30px;
+    background:#4c93cd;
+    border-bottom:1px solid #7cb0da;
+}
+.member-signin {
+    padding:0 20px;
+}
+.member-signin > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align:right;
+}
+.member-signin li {
+    display: inline-block;
+    line-height: 30px;
+    margin-left: 20px;
+    padding: 0;
+    position:relative;
+}
+.member-signin li:first-child {
+    width:75%;
+}
+.member-signin li a {
+    font-family:Arial, Helvetica, sans-serif;
+    font-size:12px;
+    text-decoration:none;
+    color:#fff295;
+    display:block;
+    text-align:right;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+}
+.member-signin li a:hover {
+    text-decoration:none;
+    color:#fff295;
+}
+.member-signin li:first-child {
+    margin-left: 0;
+}
+.member-signin li:last-child:before {
+    color:#fff295;
+    content: "|";
+    position: absolute;
+    top: 0;
+    left:-10px;
+} <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="hosted_button_id" value="B5VRRMRL9QSRC">
+<table>
+<tr><td><input type="hidden" name="on0" value="Payment Options">Payment Options</td></tr><tr><td><select name="os0">
+  <option value="Monthly">Monthly : $2.00 USD - monthly</option>
+  <option value="Annually">Annually : $20.00 USD - yearly</option>
+</select> </td></tr>
+</table>
+<input type="hidden" name="currency_code" value="USD">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_subscribeCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>

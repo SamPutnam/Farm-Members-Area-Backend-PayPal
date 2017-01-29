@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="robots" content="nofollow" />
+    <title>Code 590 Farm</title>
+    <link href="/css/memberportal.css" rel="stylesheet">
+    <script src="/js/portal_signup.js"></script>
+</head>
+<body>
+<div id="zs_signup">
+    <div class="mainContainer">
+        <div>
+            <div class="form-title">Sign Up</div>
+            <div class="form-center">
+                <div id="zs_signup_msg" class="highlight-message" style="display: none;">
+                    <p>A verification code has been sent to your email. If you don't find it in your inbox, check if it has reached your junk/spam folder.</p>
+                </div>
+                <form onsubmit = "return false" name="portalSignUpForm" class="form">
+                    <dl class="field-container">
+                        <dd>
+                            <label style="margin-right: 6px;">Email Address</label>
+                            <input type="text" name="email" autofocus="" onkeypress="fnKeyDown(event)">
+                            <div id="changeSignupEmail" style="float: right; position: relative; top: -25px; left: -7px; display: none;" onclick="fnChangeSignupEmail()">
+                                <a style="color: blue; cursor: pointer; text-decoration: none;">Change</a>
+                            </div>
+                            <span class="signupErrorElem" style="color:red;display:none;">* Please enter email ID.</span>
+                        </dd>
+                    </dl>
+                    <div id="signupContinueDiv">
+                        <span id="signup_user_error_msg_container" style="color:red; display:none;"></span>
+                        <dl class="field-container">
+                            <dd>
+                                <label></label>
+                                <input type="button" class="btn big-btn primary" onclick="signupPreConfirmation()" value="Continue">
+                            </dd>
+                        </dl>
+                    </div>
+                    <div id="signupDiv" style="display:none;">
+                        <div id="zs_verification">
+                            <dl class="field-container" >
+                                <dd>
+                                    <label style="margin-right: 6px;">Enter verification code</label>
+                                    <input type="text" name="otp">
+                                    <div style="float: right; position: relative; top: -25px; left: -7px;">
+                                        <a style="color: blue; cursor: pointer; text-decoration: none;" onclick="resendEmailConfirmation()">Resend</a>
+                                    </div>
+                                    <span class="signupErrorElem" style="color:red;display:none;">* Please enter valid verification code received in your mail.</span>
+                                </dd>
+                            </dl>
+                        </div>
+                        <dl class="field-container">
+                            <dd>
+                                <label style="margin-right: 6px;">Password</label>
+                                <input type="password" name="password">
+                                <span class="signupErrorElem" style="color:red;display:none;">* Please enter password.</span>
+                            </dd>
+                        </dl>
+                        <dl class="field-container"><dd><label>Confirm Password</label><input type=password name=confirm_password><span class="signupErrorElem" style="display: none; color: red;">* Please enter confirm password.</span></dd></dl><dl class="field-container"><dd><label>Name</label><input type=text name=name><span class="signupErrorElem" style="display: none; color: red;">* Please enter name.</span></dd></dl><dl class="field-container"><dd><label>Phone Number</label><input type=text name=phone><span class="signupErrorElem" style="display: none; color: red;">* Please enter phone number.</span></dd></dl><dl class="field-container"><dd><label>Address</label><textarea name=address></textarea><span class="signupErrorElem" style="display: none; color: red;">* Please enter address.</span></dd></dl><dl class="field-container"><dd><label>City</label><input type=text name=city><span class="signupErrorElem" style="display: none; color: red;">* Please enter city.</span></dd></dl><dl class="field-container"><dd><label>State</label><input type=text name=state><span class="signupErrorElem" style="display: none; color: red;">* Please enter state.</span></dd></dl><dl class="field-container"><dd><label>Country</label><input type=text name=country><span class="signupErrorElem" style="display: none; color: red;">* Please enter country.</span></dd></dl><dl class="field-container"><dd><label>Postal Code</label><input type=text name=postal_code><span class="signupErrorElem" style="display: none; color: red;">* Please enter postal code.</span></dd></dl>
+                        <dl class="field-container" id="portal_subscription" style="display:none;">
+                            <dd>
+                                <label></label>
+                                <label class="signup-checkbox ">
+                                    <input type="checkbox" name="subscription" value="true">Subscribe me to Zoho Newsletter
+                                </label>
+                            </dd>
+                        </dl>
+                        <span id="signup_error_msg_container" style="color:red; display:none;"></span>
+                        <dl class="field-container">
+                            <dd>
+                                <label></label>
+                                <input type="submit" class="btn big-btn primary" onclick="submitForm()" value="Sign Up">
+                            </dd>
+                        </dl>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <dl class="field-container forget-newuser ">
+        <dd>
+            <div>Already have an account? <a href="/signin" style="font-size:13px;">Sign In</a></div>
+        </dd>
+    </dl>
+    <iframe id="sitesIframe" src="https://sites.zoho.com/html/portalFrame.html" style="display:none;"></iframe>
+</div>
+<div id="zs_noSignupAllowed" style="display:none">
+    <div class="mainContainer maincontent">
+        <div class="text-center ">
+            <h2>Signup disabled</h2>
+        </div>
+        <p class="textStyle2" style="text-align:center">Signup is disabled for this website. Please contact admin.</p>
+        <p id="btn-cont" class="btn-container">
+            <a href="/"><button class="btn-style">Back to website</button></a>
+        </p>
+    </div>
+</div>
+</body>
+</html>
